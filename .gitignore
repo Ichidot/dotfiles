@@ -12,4 +12,4 @@
 .config/cmus
 .config/wal
 .config/VSCodium
-
+.config/qutebrowser/catppuccin/__pycache__
