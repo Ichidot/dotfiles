@@ -1,0 +1,67 @@
+{
+  "logo": {
+    "source": "$HOME/.config/fastfetch/ascii.txt",
+    "color": {
+        "1": "1"
+    }
+    },
+  "modules": [
+    {
+        "type": "title",
+        "format": "󱩊 : {6}{7}{8}"
+    },
+
+    {
+        "type": "os",
+        "key": " distro",
+        "format": "{id}"
+    },
+    { 
+        "type": "kernel",
+        "key": "├ kernel",
+        "format": "{2}"
+    },
+    {
+        "type": "packages",
+        "key": "├󰏖 packages"
+    },
+    {
+        "type": "terminal",
+        "key": "├ terminal",
+        "format": "{5}"
+    },
+    {
+        "type": "wm",
+        "key": "╰ wm",
+        "format": "{2}"
+    },
+
+    "break",
+    
+    {
+        "type": "display",
+        "key": " display",
+        "format": "{3}hz"
+    },
+    {
+        "type": "cpu",
+        "key": "├ cpu",
+        "format": "{1}"
+    },
+    {
+        "type": "gpu",
+        "key": "├ gpu",
+        "format": "{2}"
+    },
+    {
+        "type": "disk",
+        "key": "├ dsk",
+        "format":  "({3})   {1} / {2}"
+    },
+    {
+        "type": "memory",
+        "key": "╰ ram",
+        "format":  "({3})   {1} / {2}"
+    }
+  ]
+}

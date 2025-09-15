@@ -1,0 +1,16 @@
+.config/dconf
+.config/FreeTube
+.config/gtk-3.0
+.config/pulse
+.config/nvim/lazy-lock.json
+.config/kitty/kitty.conf.bak
+.config/qutebrowser/__pycache__
+.config/qutebrowser/bookmarks
+.config/qutebrowser/greasemonkey
+.config/qutebrowser/quickmarks
+.config/qutebrowser/qsettings
+.config/cmus
+.config/wal
+.config/VSCodium
+.config/qutebrowser/catppuccin/__init__.py
+

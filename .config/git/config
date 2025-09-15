@@ -1,0 +1,7 @@
+[user]
+    name = "isaac"
+    email = "isaac@git.email"
+
+[init]
+    defaultBranch = "dev"
+

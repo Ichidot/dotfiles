@@ -1,0 +1,32 @@
+/* isaac bar */
+
+* {
+    font-family:        FontAwesome, MapleMono;
+    font-size:          16px;
+    color:              #fff;
+}
+
+#waybar {
+    background-color:   rgba(0, 0, 0, 0.5);
+    border-radius:      6px;
+}
+
+#clock,
+#battery,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber {
+    padding:            0 16px;
+    border-radius:      6px;
+}
+
+#workspaces button { 
+    border-radius:      6px;
+    margin:             6px;
+}
+
+#workspaces button.active {
+    background:         #444877;
+    transition:         0.3s;
+}

@@ -1,0 +1,56 @@
+{
+    "layer": "top",
+    "width": 900,
+    "position": "top",
+    "spacing": 6,
+    "margin": 6, 
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "backlight",
+        "battery",
+        "battery#bat2"
+    ],
+    "clock": {
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "backlight": {
+        "format": "{icon} ",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "format": "{icon} ",
+        "format-full": "100%",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": " ",
+        "format-linked": "connection error",
+        "format-disconnected": "offline"
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "tooltip-format": "{volume}%",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "default": ["", " ", " "]
+        }
+    }
+}
