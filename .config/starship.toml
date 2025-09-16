@@ -10,8 +10,7 @@ $python\
 $c\
 $lua\
 $time\
-[ ](fg:#212736)\
-\n$character"""
+[ ](fg:#212736) $character"""
 
 [directory]
 style = "fg:#e3e5e5 bg:#444877"
