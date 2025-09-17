@@ -13,3 +13,5 @@
 .config/wal
 .config/VSCodium
 .config/qutebrowser/catppuccin/__pycache__
+.config/astro
+.config/cava

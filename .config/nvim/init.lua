@@ -59,7 +59,19 @@ dashboard.section.buttons.val = {
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = { "lua_ls", "pyright", "clangd" },
+    ensure_installed = {
+    "lua_ls",
+    "pyright",
+    "clangd",
+    "astro",
+    "cssls",
+    "html",
+    "jsonls",
+    "ruff",
+    "rust_analyzer",
+    "ts_ls",
+    "biome"
+    },
     handlers = {
         function(server)
             require("lspconfig")[server].setup {
@@ -91,6 +103,4 @@ cmp.setup({
 vim.cmd("colorscheme blue-moon")
 
 alpha.setup(dashboard.config)
-
-
 
