@@ -7,7 +7,7 @@
 }
 
 #waybar {
-    background-color:   rgba(0, 0, 0, 0.5);
+    background-color:   rgba(11, 9, 22, 0.5);
     border-radius:      6px;
 }
 
@@ -27,6 +27,6 @@
 }
 
 #workspaces button.active {
-    background:         #444877;
+    background:         rgba(68, 72, 119, 0.5);
     transition:         0.3s;
 }

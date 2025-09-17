@@ -5,7 +5,7 @@ return {
         dependencies = { "nvim-tree/nvim-web-devicons" },
     "nvim-tree/nvim-tree.lua",
         dependencies = { "nvim-tree/nvim-web-devicons" },
-    "kyazdani42/blue-moon",
+    "yorumicolors/yorumi.nvim",
     "mason-org/mason.nvim",
         opts = {}, 
     "stevearc/conform.nvim",

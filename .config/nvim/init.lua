@@ -100,7 +100,7 @@ cmp.setup({
     },
 })
 
-vim.cmd("colorscheme blue-moon")
+vim.cmd("colorscheme yorumi")
 
 alpha.setup(dashboard.config)
 
