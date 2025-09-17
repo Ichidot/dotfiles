@@ -64,6 +64,7 @@ unzip MapleMono-TTF.zip
 sudo mv *.ttf /usr/share/fonts/
 
 cd ~/
+rm -rf .bash*
 
 # symlink dotfiles
 rm -rf ~/.config/
@@ -73,7 +74,5 @@ rm -rf ~/pics/
 ln -s ~/dotfiles/pics ~/pics/
 
 sudo pacman -Syu --noconfirm
-
-rm -rf .bash*
 
 sudo reboot
