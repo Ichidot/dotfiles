@@ -15,7 +15,7 @@ sudo pacman -S git tlp brightnessctl playerctl openresolv iwd dhcpcd nano --noco
 sudo systemctl enable iwd dhcpcd tlp
 
 # utils
-sudo pacman -S wget yt-dlp wl-clipboard mpv cmus man-db starship fastfetch impala unzip --noconfirm
+sudo pacman -S wget yt-dlp wl-clipboard mpv cmus man-db stow starship fastfetch impala unzip --noconfirm
 
 # shells
 sudo pacman -S fish dash --noconfirm
@@ -25,6 +25,8 @@ sudo ln -s /bin/dash /bin/sh
 
 # vpn
 sudo pacman -S wireguard-tools --noconfirm
+
+sudo resolvconf -u
 
 # apps
 sudo pacman -S qutebrowser neovim kitty --noconfirm
@@ -42,7 +44,7 @@ rm -rf ~/paru-bin
 # wm & de
 sudo pacman -S ly --noconfirm
 sudo pacman -S hyprland hyprpaper hyprpicker hypridle hyprlock seatd --noconfirm
-sudo pacman -S waybar fuzzel python-pywal quickshell --noconfirm
+sudo pacman -S waybar fuzzel python-pywal --noconfirm
 
 sudo systemctl enable ly
 
@@ -58,20 +60,13 @@ yes | sudo pacman -S pipewire-jack
 # fonts
 sudo pacman -S ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono --noconfirm
 sudo pacman -S noto-fonts-emoji --noconfirm
-cd ~/new/
-wget "https://github.com/subframe7536/maple-font/releases/download/v7.7/MapleMono-TTF.zip"
-unzip MapleMono-TTF.zip
-sudo mv *.ttf /usr/share/fonts/
 
 cd ~/
 rm -rf .bash*
 
 # symlink dotfiles
-rm -rf ~/.config/
-ln -s ~/dotfiles/.config/ ~/.config/
-
-rm -rf ~/pics/
-ln -s ~/dotfiles/pics ~/pics/
+cd ~/dotfiles/
+stow .
 
 sudo pacman -Syu --noconfirm
 
