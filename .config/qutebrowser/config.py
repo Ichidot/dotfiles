@@ -24,18 +24,12 @@ c.downloads.remove_finished = 3000
 
 c.url.searchengines = {
     "DEFAULT": "https://noai.duckduckgo.com/?q={}",
-    "wp": "https://en.wikipedia.org/w/index.php?search={}",
     "ud": "https://urbandictionary.com/define.php?term={}",
     "gh": "https://github.com/{}",
-    "md": "https://mastodon.social/@{}",
-    "bk": "https://bsky.app/profile/{}",
     "ghp": "https://{}.github.io/",
-    "pro": "https://{}.proton.me/",
-    "neo": "https://{}.neocities.org",
+    "ptn": "https://{}.proton.me/",
     "r": "https://reddit.com/r/{}",
     "yt": "https://www.youtube.com/results?search_query={}",
-    "inv": "https://inv.nadeko.net/search?q={}",
     "dle": "https://dle.rae.es/{}",
-    "wh": "https://wallhaven.cc/search?q={}"
 }
 

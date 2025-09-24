@@ -6,16 +6,16 @@ USERNAME="isaac"
 cd ~/
 mkdir new/
 
-# update repos
-sudo pacman -Sy --noconfirm
+# update repos & packages
+sudo pacman -Syyu --noconfirm
 
 # essentials
-sudo pacman -S git tlp brightnessctl playerctl openresolv iwd dhcpcd nano --noconfirm
+sudo pacman -S git tlp brightnessctl playerctl openresolv iwd dhcpcd nano bluez --noconfirm
 
-sudo systemctl enable iwd dhcpcd tlp
+sudo systemctl enable iwd dhcpcd tlp bluetooth
 
 # utils
-sudo pacman -S wget yt-dlp wl-clipboard mpv cmus man-db stow starship fastfetch impala unzip --noconfirm
+sudo pacman -S wget yt-dlp wl-clipboard mpv cmus man-db stow starship fastfetch bluetui impala unzip --noconfirm
 
 # shells
 sudo pacman -S fish dash --noconfirm
@@ -60,9 +60,15 @@ yes | sudo pacman -S pipewire-jack
 # fonts
 sudo pacman -S ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono --noconfirm
 sudo pacman -S noto-fonts-emoji --noconfirm
+mkdir ~/dotfiles/fonts/
+cd ~/dotfiles/fonts/
+wget https://github.com/subframe7536/maple-font/releases/download/v7.7/MapleMono-Variable.zip
+unzip MapleMono-Variable.zip
+sudo mv *.ttf /usr/share/fonts/
 
 cd ~/
 rm -rf .bash*
+rm -rf ~/dotfiles/fonts/*
 
 # symlink dotfiles
 cd ~/dotfiles/
